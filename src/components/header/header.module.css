@@ -1,0 +1,298 @@
+.container{
+    width: 100vw;
+    position: relative;
+}
+.description{
+    width: 70%;
+    background-image: linear-gradient(to bottom right,white,var(--lighterskyBlue),var( --lightskyBlue),var(--skyBlue));
+    border-bottom-right-radius: 1rem;
+    padding: 3rem 0 10rem 6rem;
+}
+.description> :first-child{
+    width: 3rem;
+    height: 3rem;
+    color: var(--logoBlue);
+    margin-bottom: 7rem;
+}
+.description> :nth-child(2){
+    width: 50%;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.description> :nth-child(3){
+    width: 50%;
+}
+.calculation{
+    width: 45%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 1rem 1rem 2rem var(--lighterskyBlue);
+
+}
+.calculation> :first-child{
+    margin-bottom: 2rem;
+}
+.radioContainer, .inputContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.radio{
+    width: 45%;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.radio>:first-child:hover{
+    cursor: pointer;
+}
+.input{
+    width: 45%;
+    position: relative;
+}
+.input> :first-child{
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: .3rem;
+}
+.input> :nth-child(2){
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    outline: none;
+    border: .1rem solid var(--gray);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.input> :nth-child(2):hover{
+    cursor: pointer;
+}
+.input> :nth-child(3){
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    color: var(--biroBlue);
+    font-weight: 700;
+}
+.resultDisplay{
+    background-color: var(--biroBlue);
+    color: white;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    position: relative;
+    width: 92%;
+    z-index: 1;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; 
+}
+.resultDisplay> :first-child{
+    margin-bottom: 1.5rem;
+}
+.circle{
+    position: absolute;
+    z-index: -1; 
+    height: 100%;
+    width: 10rem;
+    background-color: var(--biroBlue);
+    border-radius: 50%; 
+    top: 0;
+    right: -9%;
+
+}
+.resultWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+.result{
+    width: 30%;
+}
+.result> :first-child{
+    margin-bottom: 1rem;
+}
+.resultComment{
+    width: 70%;
+}
+
+/* media query for max-width 1090 */
+@media screen and (min-width: 1089px){
+    .resultDisplay{ 
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .resultDisplay{
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .resultDisplay{
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+}
+
+@media screen and (max-width: 801px){
+    .description{
+        width: 100%;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        padding: 5% 5% 35% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .description> :first-child{
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 3rem;
+    }
+    .description> :nth-child(2){
+        width: 60%;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+
+    }
+    .description> :nth-child(3){
+        width: 100%;
+    }
+    .calculation{
+        width: 90%;
+        border-radius: 1rem;
+        top: 40rem;
+        right: 5%;
+        padding: 3rem;
+    }
+    .calculation> :first-child{
+        margin-bottom: 2.5rem;
+    }
+    .radio{
+        width: 45%;
+        margin-bottom: 2.5rem;
+    }
+    .input> :first-child{
+        margin-bottom: 1rem;
+    }
+    .input> :nth-child(2){
+        height: 5rem;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+    .input> :nth-child(3){
+        top: 55%;
+        right: 8%;
+    }
+
+
+    .resultDisplay{
+        margin-top: 2.5rem;
+        padding: 2rem;
+        width: 94%;   
+    }
+    .circle{
+        right: -6%;
+    }
+}
+
+@media screen and (max-width: 631px){
+    .calculation{
+        top: 45rem;
+    }
+}
+
+@media screen and (max-width: 481px){
+    .calculation{
+        top: 40rem;
+        padding: 1.5rem;
+    }
+    .description> :nth-child(2){
+        width: 80%;
+    }
+    .resultDisplay{
+        width: 100%;
+        border-radius: 2rem;
+    }
+    .resultDisplay> :first-child{
+        margin-bottom: 1.5rem;
+    }
+    .circle{
+        display: none;
+    }
+    .resultWrapper{
+        display: block;
+        padding: 0;
+    }
+    .result{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .result> :first-child{
+        margin-bottom: 1rem;
+    }
+    .resultComment{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 473px){
+    .calculation{ 
+        top: 45rem;
+    }
+}
+
+@media screen and (max-width: 453px){
+    .calculation{
+        top: 48rem;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .calculation{
+        top: 50rem;
+    }
+}
+
+@media screen and (max-width: 331px){
+    .calculation{
+        top: 52rem;
+    }
+}
+
+@media screen and (max-width: 313px){
+    .calculation{
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 307px){
+    .calculation{ 
+        top: 57rem;
+    }
+}
+
+@media screen and (max-width: 273px){
+    .calculation{
+        top: 63rem;
+    }
+}
+
+@media screen and (max-width: 239px){
+    .calculation{
+        top: 65rem;
+    }
+}
+
+@media screen and (max-width: 221px){
+    .calculation{
+        top: 68rem;
+    }
+}

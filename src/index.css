@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --skyBlue: rgb(203, 249, 249);
+  --logoBlue: rgb(46, 209, 209);
+  --lightskyBlue: rgb(226, 250, 250);
+  --lighterskyBlue: rgb(234, 249, 249);
+  --biroBlue: rgb(3, 3, 157);
+  --pink: rgb(246, 18, 56);
+  --pinkgro: rgb(247, 154, 169);
+  --brown: rgb(229, 61, 5);
+  --orange: rgb(243, 160, 5);
+  --orangegro: rgb(235, 201, 137);
+  --green: rgb(4, 174, 98);
+  --greengro: rgb(211, 239, 226);
+  --yellow: rgb(209, 209, 2);
+  --purple: purple;
+  --gray: rgb(232, 226, 226);
+  --darkGray: rgb(31, 30, 30);
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: var(--darkGray);
+  font-size: 1.2rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+p{
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 1090px) {
+  html{
+    font-size: 80.5%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  body{
+    font-size: 1.6rem;
+  }
+  p{
+    line-height: 2.5rem;
+  }
+  h4{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+}
+

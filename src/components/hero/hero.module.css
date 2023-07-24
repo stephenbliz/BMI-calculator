@@ -1,0 +1,124 @@
+.container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+}
+.imageWrapper{
+    background-color: var(--lightskyBlue);
+    position: relative;
+    width: 45%;
+    height: 30rem;
+    margin-top: 6rem;
+    border-radius: 2rem;
+}
+.image{
+    position: absolute;
+    width: 90%;
+    height: 36rem;
+    top: -6rem;
+}
+.textWrapper{
+    width: 45%;
+    margin-top: 6rem;
+    padding-top: 5rem;
+}
+.textWrapper> :first-child{
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 801px){
+    .container{
+        margin-top: 25rem;
+        padding: 0 5% 0 5%;
+    }
+    .textWrapper{
+        width: 45%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+/* @media screen and (max-width: 700px){
+    .container{
+        margin-top: 25rem;
+    }
+} */
+
+@media screen and (max-width: 693px){
+    .container{
+        margin-top: 28rem;
+    }
+}
+@media screen and (max-width: 557px){
+    .container{
+        margin-top: 30rem;
+    }
+}
+
+@media screen and (max-width: 532px){
+    .container{
+        margin-top: 33rem;
+    }
+}
+
+@media screen and (max-width: 481px){
+    .container{
+        margin-top: 42rem;
+        display: block;
+        padding: 0 5% 0 5%;
+    }
+    .imageWrapper{
+        width: 100%;
+    }
+    .textWrapper{
+        width: 100%;
+        margin-top: 5rem;
+        padding-top: 0rem;
+    }
+    .textWrapper> :first-child{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 454px){
+    .container{
+        margin-top: 44rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        margin-top: 46rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .container{
+        margin-top: 47rem;
+    }
+}
+
+@media screen and (max-width: 355px){
+    .container{
+        margin-top: 49rem;
+    }
+}
+
+@media screen and (max-width: 296px){
+    .container{
+        margin-top: 54rem;
+    }
+}
+
+@media screen and (max-width: 273px){
+    .container{
+        margin-top: 57rem;
+    }
+}
+
+@media screen and (max-width: 234px){
+    .container{
+        margin-top: 66rem;
+    }
+}

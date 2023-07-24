@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 10% 3% 10%;
+    background-color: var(--lighterskyBlue);
+    margin-top: 5rem;
+}
+.recomWrapper{
+    width: 30%;
+}
+.recomWrapper>div {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.recomWrapper>div> :first-child{
+    width: 2rem;
+    position: absolute;
+    height: 2rem;
+    top: 25%;
+    left: 25%;
+}
+.faceWrapper{
+    background-color:var(--pinkgro);
+}
+
+.face{
+    color: var(--pink);
+}
+.gym{
+    color: var(--orange);
+}
+.gymWrapper{
+    background-color: var(--orangegro);
+}
+.night{
+    color: var(--green);
+}
+.nightWrapper{
+    background-color: var(--greengro);
+}
+.recomWrapper> :nth-child(2){
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 801px){
+    .container{
+        display: block;
+        padding: 7% 5% 0 5%;
+        background-color: var(--lighterskyBlue);
+        margin-top: 5rem;
+    }
+    .recomWrapper{
+        width: 100%;
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+    
+    .recomWrapper> h4{
+        position: absolute;
+        top: -1rem;
+        left: 7rem;
+    }
+    .recomWrapper> p{
+        position: relative;
+        top: -4rem;
+        left: 7rem;
+    }
+    .recomWrapper>:nth-child(3){
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 337px){
+    .recomWrapper>:nth-child(3){
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 292px){
+    .recomWrapper>:nth-child(3){
+        width: 65%;
+    }
+}
