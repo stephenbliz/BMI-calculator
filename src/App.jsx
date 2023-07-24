@@ -1,7 +1,7 @@
-import Header from "./components/header/Header.jsx"
-import Hero from "./components/hero/Hero.jsx"
-import Limitation from "./components/limitation/Limitation.jsx"
-import Recommendation from "./components/recommendation/Recommendation.jsx"
+import Header from "./components/Header.jsx"
+import Hero from "./components/Hero.jsx"
+import Limitation from "./components/Limitation.jsx"
+import Recommendation from "./components/Recommendation.jsx"
 
 
 function App() {

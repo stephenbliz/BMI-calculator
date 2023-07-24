@@ -1,5 +1,5 @@
 import css from './hero.module.css';
-import manEating from '../../assets/IMG_20230718_224858.png';
+import manEating from '../assets/IMG_20230718_224858.png';
 
 const Hero = () => {
     return (
